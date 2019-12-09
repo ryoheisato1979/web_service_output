@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+}
+
+body{
+    margin: 0 auto;
+    background-image: url(img/wood-3253358_1920.jpg);
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode:lighten;
+}
+
+#index{
+    background-image: url(img/umbrella-2863648_1920.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(147, 147, 147, 0.2);
+    background-blend-mode:lighten;
+}
+
+.site-width{
+
+    margin: 0 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* header & navbar */
+.header{
+    width: 100%;
+    background-color: rgba(138, 138, 138, 0.5);
+}
+
+.nav-container{
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title h1 a{
+    font-size: 40px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-flex li{
+    margin-right: 50px;
+    list-style: none;
+}
+
+.nav-list ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav-list ul li a :hover{
+    color: rgb(138, 138, 138);
+}
+
+.nav-title{
+    margin-left: 30px;
+}
+
+
+/* id main */
+#mypage{
+    float: left;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+#main{
+    margin: 0 auto;
+}
+
+/* class main */
+.index-container{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.index-container h1,p{
+    color: #000000;
+}
+
+.index-container p{
+    margin-bottom: 50px;
+}
+
+.sub-title{
+    margin: 0 30px 0 30px;
+    color: aliceblue;
+}
+
+/* ボタン */
+
+a.cp_btn {
+	display: inline-block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	border-top: 2px solid rgb(0, 0, 0);
+	border-bottom: 2px solid rgb(0, 0, 0);
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+}
+a.cp_btn:before, a.cp_btn:after {
+	content: '';
+	position: absolute;
+	top: -7px;
+	width: 2px;
+	height: calc(100% + 14px);
+	background-color: rgb(0, 0, 0);
+	transition: .3s;
+}
+a.cp_btn:before {
+	left: 7px;
+}
+a.cp_btn:after {
+	right: 7px;
+}
+a.cp_btn:hover:before{
+	top: 0px;
+	left:0;
+	height: 100%;
+}
+a.cp_btn:hover:after{
+	top: 0px;
+	right: 0;
+	height: 100%;
+}
+
+/* フォーム */
+
+.form-container{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    background: rgba(155, 170, 182, 0.2);
+}
+
+#code-detail{
+    width: 1000px;
+    margin-left: 100px;
+    text-align: center;
+    margin-top: 50px;
+    background: rgba(155, 170, 182, 0.2);
+}
+
+.form-title{
+    font-size: 40px;
+    margin: 40px auto;
+    padding-top: 40px;
+}
+
+.form input[type='text'], input[type='password']{
+    width: 400px;
+    height: 40px;
+    margin-top: 30px;
+    font-family : initial;
+}
+
+.form input[type='checkbox']{
+    margin-top: 30px;
+    margin-bottom:30px; 
+    font-family : initial;
+}
+
+.form textarea{
+    font-family : initial;
+}
+
+select{
+    margin: 30px;
+}
+
+.form input[type="submit"]{
+    width: 300px;
+    margin: 50px 0 60px 0;
+    display       : inline-block;
+    font-size     : 16pt;        /* 文字サイズ */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 20px 20px;   /* 余白       */
+    background    :#f6f5f5;     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1px;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 8px 8px 6px #666666;  /* 影の設定 */
+    border        : 2px solid rgba(255, 255, 255, 0.57);    /* 枠の指定 */
+}
+
+.sort{
+  text-align: center;
+}
+
+textarea{
+  background: #f6f5f5;
+  border: none;
+}
+
+.btn:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : rgba(255, 255, 255, 0.5);     /* 背景色     */
+    }
+
+input::-webkit-input-placeholder {
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+}
+input:-moz-placeholder {
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+}
+input::-moz-placeholder {
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+}
+input:-ms-input-placeholder {
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* ここ注意 */
+input[type="text"]{
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  height: 60px;
+  border: none;
+  background: #f6f5f5;
+  font-size: 18px;
+}
+
+.form select{
+  margin-bottom: 40px;
+  padding: 10px;
+  height: 60px;
+  border: none;
+  background: #f6f5f5;
+  font-size: 18px;
+}
+
+input[type="password"]{
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  background: #f6f5f5;
+  font-size: 18px;
+}
+
+input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+  background: #f6f5f5;
+  vertical-align: middle;
+}
+
+input[type="number"]{
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  background: #f6f5f5;
+  font-size: 18px;
+}
+
+
+
+/* 詳細画面のレイアウト */
+#code-detail{
+    width: 1000px;
+    height: 800px;
+}
+
+#code-detail h1{
+    color: #000000;
+}
+
+/* 画像処理 */
+.form .area-drop{
+    margin-bottom: 15px;
+    height: 150px;
+    width: 250px;
+    background: #f6f5f4;
+    color: #ccc;
+    text-align: center;
+    line-height: 150px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .form .input-file{
+    opacity: 0;
+    width: 100%;
+    height: 200px;
+    background: #f6f5f4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; /* 必ずz-indexをつけないと登録画像を変更する際にドラッグ＆ドロップできなくなる*/
+  }
+  .form .prev-img{
+    width:100%;
+    position:absolute;
+    background: #f6f5f4;
+    top:0;
+    left:0;
+  }
+  .form .imgDrop-container{
+    height: 250px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .form .counter-text{
+    text-align: right;
+  }
+
+/* area-msg */
+.area-msg{
+    color: red;
+    font-size: 20px;
+}
+
+/* err */
+.err input{
+    background: #f7dcd9;
+}
+
+/* sidebar */
+#sidebar{
+    float: left;
+    background: rgba(155, 170, 182, 0.2);
+    width: 150px;
+    min-height: 750px;
+}
+
+.sidebar{
+    background: rgba(155, 170, 182, 0.2);
+    width: 200px;
+    min-height: 750px;
+    float: right;
+}
+
+.sidebar-title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.sidebar-list{
+    margin-left: 20px;
+}
+
+.sidebar-list ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.sidebar-list ul li a{
+text-decoration: none;
+color: #000000;
+}
+
+/*========================================
+  リスト
+========================================*/
+
+.list > .title {
+    padding-left: 10px;
+    border-left: 6px solid #b6a489;
+  }
+  
+  .panel-list {
+    overflow: hidden;
+    margin-right: -15px;
+    width: 1000px;
+  }
+  
+  .panel-list > .panel {
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    min-height: 185px;
+    width: 25%;
+    color: #333;
+    text-decoration: none;
+    line-height: 1.2em;
+  }
+  
+  a.panel:hover {
+    text-decoration: underline;
+  }
+  
+  .panel-list > .panel img {
+    width: 100%;
+  }
+  
+  .panel-list > .panel .panel-title {
+    margin: 0;
+  }
+  /* テーブルリスト
+  ========================================*/
+  
+  .list-table > table {
+    width: 100%;
+    border-spacing: 0 5px;
+  }
+  
+  .list-table th,
+  .list-table td {
+    padding: 5px;
+  }
+  .list-table th{
+    text-align: left;
+  }
+  
+  .list-table > .table > tbody td {
+    border-right: none;
+    background: #f6f5f4;
+  }
+
+/*========================================
+  検索エリア
+========================================*/
+
+.search-title {
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    height: 40px;
+    background: #f6f5f4;
+    line-height: 40px;
+  }
+  
+  .search-left {
+    float: left;
+  }
+  
+  .search-right {
+    float: right;
+  }
+  
+  .search-title .total-num {
+    padding-right: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+/*========================================
+  ページネーション
+========================================*/
+
+.pagination {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pagination-list {
+    position: relative;
+    left: 50%;
+    float: left;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .pagination .list-item {
+    position: relative;
+    left: -50%;
+    float: left;
+    margin-right: 5px;
+  }
+  
+  .pagination .list-item:last-child {
+    margin-right: 0;
+  }
+  
+  .pagination .list-item a {
+    display: block;
+    padding: 5px 10px;
+    background: #eee;
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .pagination .list-item.active a {
+    background: #333;
+    color: white;
+  }
+  
+  .pagination .list-item a:hover {
+    background: #333;
+    color: white;
+  }
+
+
+
+/* details */
+.edit-container{
+    margin: 10px;
+}
+
+.edit1{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.edit2{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: left;
+}
+
+
+table td {
+  word-break : break-all;
+}
+.edit2-1{
+  width: 500px;
+  height: 200px;
+}
+
+.edit2-2{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 200px;
+}
+
+.p-com{
+  width: 400px;
+  word-wrap:break-word;
+  text-align: left;
+}
+
+.edit3{
+  margin-top: 100px;
+}
+
+.edit-photo img{
+  height: 320px;
+  width: 250px;
+}
+
+.edit-name p span{
+  font-size: 30px;
+}
+
+/* footer */
+
+#footer{
+    overflow: hidden;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
