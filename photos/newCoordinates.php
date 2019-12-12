@@ -17,11 +17,11 @@ require('auth.php');
 
 // DBからカテゴリデータを取得
 $dbCategoryData = getCategory();
-$c_id = (!empty($_GET['c_id'])) ? $_GET['c_id'] : '';
-$dbFormData = getCode($_SESSION['user_id'],$c_id);
+// $c_id = (!empty($_GET['c_id'])) ? $_GET['c_id'] : '';
+// $dbFormData = getCode($_SESSION['user_id'],$c_id);
 
-debug('dbCategoryDataの中身：'.print_r($dbCategoryData,true));
-debug('$dbFormDataの中身：'.print_r($dbFormData,true));
+// debug('dbCategoryDataの中身：'.print_r($dbCategoryData,true));
+// debug('$dbFormDataの中身：'.print_r($dbFormData,true));
 
 
 
@@ -36,7 +36,7 @@ if(!empty($_POST)){
   //変数にユーザー情報を代入
 $code_name = $_POST['code_name'];
 $category = $_POST['category_id'];
-$price = (!empty($_POST['price'])) ? $_POST['price'] : 0;
+// $price = (!empty($_POST['price'])) ? $_POST['price'] : 0;
 $comment = $_POST['comment'];
   //画像をアップロードし、パスを格納
 $pic = (!empty($_FILES['pic']['name'])) ? uploadImg($_FILES['pic'],'pic') : '';
@@ -45,12 +45,12 @@ $pic = (empty($pic) && !empty($dbFormData['pic'])) ? $dbFormData['pic'] : $pic;
   // 更新の場合はDBの情報と入力情報が異なる場合にバリデーションを行う
 
     //未入力チェック名前
-    validRequired($code_name, 'code_name');
+    // validRequired($code_name, 'code_name');
     //未入力チェック　金額
-    validRequired($price, 'price');
+    // validRequired($price, 'price');
 
     if(empty($err_msg)){
-        debug('未入力チェックOK');
+        // debug('未入力チェックOK');
     //最大文字数チェック名前
     validMaxLen($code_name,'code_name');
     //セレクトボックスチェック　カテゴリ
@@ -58,7 +58,7 @@ $pic = (empty($pic) && !empty($dbFormData['pic'])) ? $dbFormData['pic'] : $pic;
     //最大文字数チェック　コメント
     validMaxLen($comment, 'comment', 500);
     //半角数字チェック　金額
-    validNumber($price, 'price');
+    // validNumber($price, 'price');
     }
     if(empty($err_msg)){
         debug('バリデーションOKです。');
