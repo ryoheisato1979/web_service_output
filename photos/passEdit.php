@@ -81,21 +81,21 @@ debug('ここまでpassEdit.php');
                         </div>
 
                         <lavel class="<?php if(!empty($err_msg['pass_old'])) echo 'err'; ?>">
-                            <input type="password" name="pass_old" value="<?php echo getFormData('pass_old'); ?>" placeholder="古いパスワード">
+                            <input type="password" name="pass_old" value="<?php echo $pass_old; ?>" placeholder="古いパスワード">
                         </lavel>
                         <div class="area-msg">
                         <?php if(!empty($err_msg['pass_old'])) echo $err_msg['pass_old']; ?>
                         </div>
 
                         <lavel class="<?php if(!empty($err_msg['pass_new'])) echo 'err'; ?>">
-                            <input type="password" name="pass_new" value="<?php echo getFormData('pass_new'); ?>" placeholder="新しいパスワード　※6文字以上で入力してください">
+                            <input type="password" name="pass_new" value="<?php echo $pass_new; ?>" placeholder="新しいパスワード　※6文字以上で入力してください">
                         </lavel>
                         <div class="area-msg">
                         <?php if(!empty($err_msg['pass_new'])) echo $err_msg['pass_new']; ?>
                         </div>
 
                         <lavel class="<?php if(!empty($err_msg['pass_new_re'])) echo 'err'; ?>">
-                            <input type="password" name="pass_new_re" value="<?php echo getFormData('pass_new_re'); ?>" placeholder="新しいパスワード（確認用）">
+                            <input type="password" name="pass_new_re" value="" placeholder="新しいパスワード（確認用）">
                         </lavel>
                         <div class="area-msg">
                         <?php if(!empty($err_msg['pass_new_re'])) echo $err_msg['pass_new_re']; ?>

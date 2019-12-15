@@ -87,7 +87,7 @@ debug('ここまでlogin.php');
 
             <div class="form-container">
                 <form action="" method="post" class="form">
-                    <h1 class="form-title">Login</h1>
+                    <h1 class="form-title">ログイン</h1>
 
                     <div class="form-contents">
                         <div class="area-msg">

@@ -45,12 +45,12 @@ debug('ここまでmypage.php');
 <?php require('header.php'); ?>
 
     <!-- メインコンテンツ -->
-    <div id="contents" class="site-width-index">
+    <div id="contents" class="site-width-flex">
 
     <!-- サイドバー -->
     <section id="sidebar">
         <form name="" method="get">
-        <h1 class="title">カテゴリー</h1>
+        <h1 class="searcharea-title">カテゴリー</h1>
         <div class="selectbox">
             <span class="icn_select"></span>
             <select name="c_id" id="">
@@ -77,12 +77,12 @@ debug('ここまでmypage.php');
     <!-- Main -->
     <section id="mypage" >
         <div class="search-title">
-        <div class="search-left">
-            <span class="total-num"><?php echo sanitize($dbCodeData['total']); ?></span>件見つかりました
-        </div>
-        <div class="search-right">
-            <span class="num"><?php echo (!empty($dbCodeData['data'])) ? $currentMinNum+1 : 0; ?></span> - <span class="num"><?php echo $currentMinNum+count($dbCodeData['data']); ?></span>件 / <span class="num"><?php echo sanitize($dbCodeData['total']); ?></span>件中
-        </div>
+            <div class="search-left">
+                <span class="total-num"><?php echo sanitize($dbCodeData['total']); ?></span>件見つかりました
+            </div>
+            <div class="search-right">
+                <span class="num"><?php echo (!empty($dbCodeData['data'])) ? $currentMinNum+1 : 0; ?></span> - <span class="num"><?php echo $currentMinNum+count($dbCodeData['data']); ?></span>件 / <span class="num"><?php echo sanitize($dbCodeData['total']); ?></span>件中
+            </div>
         </div>
         <div class="panel-list">
         <?php
@@ -106,5 +106,4 @@ debug('ここまでmypage.php');
     </section>
 
 </div>
-<?php require('sidebar.php'); ?>
 <?php require('footer.php'); ?>

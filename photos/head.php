@@ -15,4 +15,5 @@
     <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Gayathri&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
 </head>

@@ -6,17 +6,17 @@
                 <div class="nav-list">
                     <ul class="nav-flex">
                         <?php if(empty($_SESSION['user_id'])) { ?>
-                        <li><a href="signup.php"">Sign Up</a></li>
-                        <li><a href="login.php">Login</a></li>
+                        <li><a href="signup.php"">新規登録</a></li>
+                        <li><a href="login.php">ログイン</a></li>
                         <?php
                         }else{ 
                         ?>
-                        <li><a href="mypage.php">My_Page</a></li>
-                        <li><a href="logout.php"">Logout</a></li>
-                        <li><a href="profEdit.php">Profile_Edit</a></li>
-                        <li><a href="passEdit.php"">Password_Edit</a></li>
-                        <li><a href="newCoordinates.php"">Entry Photos</a></li>
-                        <li><a href="withDrow.php">Unsubscribe</a></li>
+                        <li><a href="mypage.php">マイページ</a></li>
+                        <li><a href="logout.php"">ログアウト</a></li>
+                        <li><a href="profEdit.php">プロフィール編集</a></li>
+                        <li><a href="passEdit.php"">パスワード変更</a></li>
+                        <li><a href="newCoordinates.php"">新規登録</a></li>
+                        <li><a href="withDrow.php">退会</a></li>
 
                         <?php
                         }?>

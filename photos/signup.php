@@ -70,7 +70,7 @@ debug('ここまでsignup.php');
 
             <div class="form-container">
                 <form action="" method="post" class="form">
-                    <h1 class="form-title">Sign Up</h1>
+                    <h1 class="form-title">新規登録</h1>
 
                     <div class="form-contents">
                         <div class="area-msg">
